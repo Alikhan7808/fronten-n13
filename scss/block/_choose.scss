@@ -1,0 +1,218 @@
+.choose__text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    text-align: center;
+    color: #fefcf7;
+  }
+  
+  .choose {
+    padding-top: 120px;
+    padding-bottom: 147px;
+  }
+  .choose__title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fefcf7;
+  }
+  
+  .choose__block {
+    background-color: #2c343e;
+    padding: 67px 24px;
+    border-radius: 10px;
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      border-radius: 10px;
+      right: 0;
+      height: 600px;
+      background-color: #2c343e;
+      z-index: -1;
+    }
+  }
+  .choose__list {
+    padding: 0 24px;
+  }
+  .choose__item {
+    background-color: #0e8784;
+    border-radius: 8px;
+    padding: 72px 34px 51px 34px;
+    margin-bottom: 25px;
+    text-align: center;
+  
+    &::before {
+      content: "";
+      width: 72px;
+      height: 72px;
+      margin-bottom: 56px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../../img/choose_tablet.svg");
+    }
+  }
+  
+  .choose__sub_title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 24px;
+    color: #fefcf7;
+  }
+  
+  .choose__des {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    color: #fefcf7;
+  }
+  @media screen and (min-width: 768px) {
+    .choose__item {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      padding: 41px 48px 41px 70px;
+      gap: 55px;
+  
+      &::before {
+        flex-shrink: 0;
+        margin-bottom: 0;
+      }
+    }
+    .choose__list {
+      padding: 0 58px;
+    }
+  
+    .choose__block::after {
+      height: 372px;
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    .choose__list {
+      display: grid;
+      padding: 0 85px;
+      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .choose__text {
+      width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .choose__item {
+      flex-direction: column;
+      text-align: center;
+      padding: 72px 48px 48px 48px;
+    }
+  
+    .choose__block::after {
+      height: 284px;
+    }
+  }
+  
+//   .wrapper {
+//     height: 100vh;
+//     border: 5px solid red;
+//     perspective: 700px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+  
+//   .box {
+//     width: 497px;
+//     height: 2px;
+//     background-color: #fdd6ba;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+  
+//     animation-name: box_wrap;
+//     animation-duration: 0.5s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear;
+//   }
+  
+//   @keyframes box_wrap {
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+  
+//   .item {
+//     width: 31px;
+//     height: 31px;
+//     border-radius: 50%;
+//     background-color: #fff;
+//     border: 2px solid #0e8784;
+//   }
+  
+//   .item3 {
+//     position: absolute;
+//     right: 0;
+//   }
+  
+//   .item1 {
+//     position: absolute;
+//     left: 0;
+//     animation-name: box_item;
+//     animation-duration: 2s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear;
+//   }
+  
+//   @keyframes box_item {
+//     0% {
+//       left: 0;
+//       transform: rotateX(0);
+//       background: #fff;
+//     }
+//     50% {
+//       left: 90%;
+//       transform: rotateX(360deg);
+//       background: blueviolet;
+//     }
+//     100% {
+//       left: 0;
+//       transform: rotateX(0);
+//       background: #fff;
+//     }
+//   }
+  
+//   .item3 {
+//     position: absolute;
+//     right: 0;
+//     animation-name: box_item3;
+//     animation-duration: 2s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear;
+//   }
+//   @keyframes box_item3 {
+//     0% {
+//       right: 0;
+//       transform: rotateX(0);
+//       background: #fff;
+//     }
+//     50% {
+//       right: 90%;
+//       transform: rotateX(360deg);
+//       background: blueviolet;
+//     }
+//     100% {
+//       right: 0;
+//       transform: rotateX(0);
+//       background: #fff;
+//     }
+//   }
+  

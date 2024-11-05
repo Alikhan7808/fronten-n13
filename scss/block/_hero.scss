@@ -1,0 +1,82 @@
+.hero_block {
+    padding: 100px 24px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    text-align: center;
+    background-image: url(../img/hero_mobile.png);
+}
+
+.hero_title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    color: #fefcf7;
+    margin-bottom: 24px;
+}
+
+.hero_text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    color: #cfcecb;
+    margin-bottom: 39px;
+}
+
+.hero_btn {
+    font-weight: 900;
+    background-color: #0E8684;
+    font-size: 18px;
+    line-height: 139%;
+    border-radius: 6px;
+    color: #fefcf7;
+    padding: 15px 31px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero_block {
+        padding: 104px 58px;
+        text-align: start;
+        background-image: url(../img/hero_tablet.png);
+    }
+
+    .hero_title {
+        font-size: 48px;
+        line-height: 100%;
+        width: 350px;
+    }
+
+    .hero_text {
+        font-size: 15px;
+        width: 398px;
+        line-height: 167%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero_block {
+        padding: 117px 85px;
+        text-align: start;
+        background-image: url(../../img/hero_decstob.png);
+    }
+
+    .hero_title {
+        font-size: 72px;
+        line-height: 100%;
+        width: 493px;
+    }
+
+    .hero_text {
+        font-size: 16px;
+        line-height: 162%;
+        width: 445px;
+    }
+
+    .hero_btn{
+        background-color: #66d2cf;
+    }
+}
+
+.hero{
+    padding-bottom: 120px;
+}
